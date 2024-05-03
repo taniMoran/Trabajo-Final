@@ -1,0 +1,39 @@
+
+/* Barra de navegacion */
+.navbar-nav{
+   
+     padding-right: 19rem;
+    margin-right: auto; margin-left: auto;  
+    
+}
+
+.nav-item{ font-size:x-large;}
+
+
+/* Buscador */
+.form-control::placeholder {
+    text-align: center;    
+}
+  
+.btn{margin-right: 100px;}
+.form-control{
+    margin-left: 160px;
+}
+
+/* MITAD IZQUIERDA */
+.izquierda{
+    height: 100vh;
+    width: 50%;
+}
+
+/* MITAD DERECHA */
+.derecha{
+    background: url(/imagenes/11.png);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+}
+    
+    #pantalla-dividida{
+        display: flex;}
