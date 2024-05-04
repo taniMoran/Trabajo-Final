@@ -1,5 +1,7 @@
 
-.d-flex{margin-top: 20px;}
+
+
+
 /* Barra de navegacion */
 .navbar-nav{
    
@@ -20,37 +22,78 @@
     
    
 }
-.form-control{height: 40px;
 
-    margin-left: 360px;
-}
-
-  
- .btn{margin-right: 320px;
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-padding-left: 20px;
-} 
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 400px; /* Ajusta el ancho máximo según tu diseño */
+    text-align: center;
+
+
+
+  }
 
 
 /* MITAD IZQUIERDA */
 .izquierda{
     height: 100vh;
     width: 50%;
+    background-position: center;
+   
 }
+
+
+.link {    
+    color: #C5302C; /* Cambia el color del texto */
+   
+  }
+
+  .link a {
+    /* Estilos para el enlace dentro*/
+    color: inherit; 
+    text-decoration: inherit; 
+  }
+
+  .link a:hover {
+    /* Estilos para el enlace cuando se pasa el cursor sobre él */
+     /* Cambia el color al pasar el cursor sobre el enlace */
+    text-decoration: none; /* Elimina el subrayado al pasar el cursor sobre el enlace */
+  }
+
+.titulo-personalizado{
+    font-size: 80px;
+}
+
+
+
 
 /* MITAD DERECHA */
 .derecha{
-    width: 500px;
-    height: 700px;
+    display: flex;
+   
+    width:50%;    
+height: 100vh;
     
     background-position: center;
 }
+
     
     #pantalla-dividida{
+         /* flex-direction: column; */
+        /* align-items: center;
+        justify-content: center;  */
+        height: 100vh;
         display: flex;
     margin-top: 15px;
         margin-left: 20px;
         
 }
 
-    .custom{background-color: aqua;}
+
+
