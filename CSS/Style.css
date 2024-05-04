@@ -1,24 +1,36 @@
 
+.d-flex{margin-top: 20px;}
 /* Barra de navegacion */
 .navbar-nav{
    
-     padding-right: 19rem;
+     padding-right: 12rem;
     margin-right: auto; margin-left: auto;  
     
 }
+
 
 .nav-item{ font-size:x-large;}
 
 
 /* Buscador */
 .form-control::placeholder {
-    text-align: center;    
+    
+    
+    text-align: center; 
+    
+   
 }
+.form-control{height: 40px;
+
+    margin-left: 360px;
+}
+
   
-.btn{margin-right: 100px;}
-.form-control{
-    margin-left: 160px;
-}
+ .btn{margin-right: 320px;
+    
+padding-left: 20px;
+} 
+
 
 /* MITAD IZQUIERDA */
 .izquierda{
@@ -28,7 +40,7 @@
 
 /* MITAD DERECHA */
 .derecha{
-    background: url(/imagenes/11.png);
+    background: url(/imagenes/10.png);
     background-size:cover;
     background-position: center;
     height: 100vh;
@@ -36,4 +48,7 @@
 }
     
     #pantalla-dividida{
-        display: flex;}
+        display: flex;
+    margin-top: 15px;}
+
+    .custom{background-color: aqua;}
