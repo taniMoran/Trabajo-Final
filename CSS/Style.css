@@ -40,15 +40,17 @@ padding-left: 20px;
 
 /* MITAD DERECHA */
 .derecha{
-    background: url(../imagenes/10.png);
-    background-size:cover;
+    width: 500px;
+    height: 700px;
+    
     background-position: center;
-    height: 100vh;
-    width: 50%;
 }
     
     #pantalla-dividida{
         display: flex;
-    margin-top: 15px;}
+    margin-top: 15px;
+        margin-left: 20px;
+        
+}
 
     .custom{background-color: aqua;}
