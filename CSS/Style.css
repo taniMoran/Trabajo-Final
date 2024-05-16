@@ -1,0 +1,44 @@
+/*Contenedor*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
+
+/*Tarjetas*/
+.card-img-top {
+    width: auto; /* Establece el ancho de la imagen a automático */
+    height: auto; /* Establece la altura de la imagen a automático */
+    max-width: 50%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 50%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+    margin-left: 30%; /*desde la izquierda*/
+}
+
+.card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0px !important; /*tamaño borde superior*/
+    border-bottom: 1px solid !important; /*px tamaño y color del borde inferior*/
+}
+
+/*Estilo del botón 'comprar': color de fondo y letras*/
+.btn-primary {
+    background-color: black !important; /* Cambia el color de fondo del botón */
+    border-color: black !important; /* Cambia el color del borde del botón */
+  }
+
+.btn-primary:hover{
+    background-color: white !important;
+    border-color: black !important;
+    color: black !important;
+}
+
+.btn-primary:active {
+    background-color: black !important; /* Cambia el color de fondo cuando se hace clic */
+    border-color: black !important; /* Cambia el color del borde cuando se hace clic */
+    color: white !important;
+}
