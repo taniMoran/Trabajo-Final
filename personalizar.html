@@ -9,39 +9,44 @@
     <link rel="stylesheet" href="CSS/Personalizar_Style.css">
     <!-- Titulo -->
     <title>Personalizar</title>
-    <link rel="stylesheet" href="CSS/Style.css">
+
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Hide & Smile</title>
 </head>
 
 <header>
-    <body>
-        <!-- Barra de navegacion -->
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="index.html">
-            <img src="imagenes/Logo Corazon 2.png" alt="Imagen Logo" width="150px" height="150px">
-    
-          </a>
-          <ul class="navbar-nav d-flex justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active"href="#" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>      
-        </div>    
+          <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/Logo Corazon 2.png" alt="Logo" width="150" height="150" class="img-fluid">
+      </a>    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center mx-auto" id="navbarNav"> <!-- Cambio de clase a mx-auto -->
+        <ul class="navbar-nav"> <!-- Eliminada la clase justify-content-center -->
+          <li class="nav-item ">
+            <!--<h4><a class="nav-link border rounded-pill bg-secondary text-white p-3" href="#">Personalizados</a></h4>-->
+          </li>
+          <li class="nav-item">
+           <h4><a class="nav-link border rounded-pill bg-secondary text-white p-3" href="#">Kits Para Regalo </a></h4> 
+          </li>
+          <li class="nav-item">
+            <h4><a class="nav-link border rounded-pill bg-secondary text-white p-3" href="#">Mas Solicitados</a></h4>
+          </li>
+        </ul>
       </div>
-    </nav>
+      <!-- Redes Sociales -->
+      <button type="button" class="btn btn-outline-primary me-3 bg-primary">
+        <img src="imagenes/facebook.svg" alt="Facebook" width="30" class="">
+      </button>
+      <button type="button" class="btn btn-outline-success bg-success">
+        <img src="imagenes/whatsapp.svg" alt="WhatsApp" width="30" class="">
+      </button>
+    </div>
+  </nav>
 </header>
 
 <body>
@@ -60,7 +65,6 @@
           <div id="Imperial"></div>
         </div>
         </div>
-
       </section>
 
       <!--Lista de colores-->
@@ -82,17 +86,6 @@
         </div>
         </div>
       </section>
-      
-      <!--Lista de Otas-->
-      <section id="Caja_Otras">
-        <div id="Caja_4">Otras
-          <div id="AlinearBTN4">
-          <div id="Color_2Marron"></div>
-          <div id="Color_2Negro"></div>
-        </div>
-        </div>
-      </section>
-    </div>
     <script src="Scripts/Cambio_Amtes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

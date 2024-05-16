@@ -9,7 +9,7 @@ let DoradoBTN = document.getElementById("Color_Dorado");
 
 let imgchange = document.getElementById("img_mate_0");
 
-var BLcalabaza = false;
+var BLcalabaza = true;
 var BLImperial = false;
 var BLColorMarron=false;
 var BLColorNegro=false;
