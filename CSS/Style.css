@@ -37,8 +37,25 @@
     color: black !important;
 }
 
+<<<<<<< HEAD
 .btn-primary:active {
     background-color: black !important; /* Cambia el color de fondo cuando se hace clic */
     border-color: black !important; /* Cambia el color del borde cuando se hace clic */
     color: white !important;
 }
+=======
+/* MITAD DERECHA */
+.derecha{
+    background: url(../imagenes/10.png);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    width: 50%;
+}
+    
+    #pantalla-dividida{
+        display: flex;
+    margin-top: 15px;}
+
+    .custom{background-color: aqua;}
+>>>>>>> Fernando
