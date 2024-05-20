@@ -123,3 +123,8 @@
         background-color: #AAAAAA;
         text-align: center;
     }
+    .home{
+
+        display: flex;
+        flex-wrap: wrap;
+    }
