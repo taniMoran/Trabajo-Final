@@ -1,54 +1,163 @@
+/*Contenedor*/
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 0;
+  }
 
-.d-flex{margin-top: 20px;}
-/* Barra de navegacion */
-.navbar-nav{
-   
-     padding-right: 12rem;
-    margin-right: auto; margin-left: auto;  
-    
+/*Tarjetas*/
+.card-img-top {
+    width: auto; /* Establece el ancho de la imagen a automático */
+    height: auto; /* Establece la altura de la imagen a automático */
+    max-width: 50%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+    max-height: 50%; /* Establece la altura máxima de la imagen al 100% del contenedor */
+    margin-left: 30%; /*desde la izquierda*/
 }
 
-
-.nav-item{ font-size:x-large;}
-
-
-/* Buscador */
-.form-control::placeholder {
-    
-    
-    text-align: center; 
-    
-   
-}
-.form-control{height: 40px;
-
-    margin-left: 360px;
+.card{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 0px !important; /*tamaño borde superior*/
+    border-bottom: 1px solid !important; /*px tamaño y color del borde inferior*/
 }
 
-  
- .btn{margin-right: 320px;
-    
-padding-left: 20px;
-} 
+/*Estilo del botón 'comprar': color de fondo y letras*/
+.btn-primary {
+    background-color: black !important; /* Cambia el color de fondo del botón */
+    border-color: black !important; /* Cambia el color del borde del botón */
+  }
 
-
-/* MITAD IZQUIERDA */
-.izquierda{
-    height: 100vh;
-    width: 50%;
+.btn-primary:hover{
+    background-color: white !important;
+    border-color: black !important;
+    color: black !important;
 }
 
-/* MITAD DERECHA */
-.derecha{
-    background: url(../imagenes/10.png);
-    background-size:cover;
-    background-position: center;
-    height: 100vh;
-    width: 50%;
+.btn-primary:active {
+    background-color: black !important; /* Cambia el color de fondo cuando se hace clic */
+    border-color: black !important; /* Cambia el color del borde cuando se hace clic */
+    color: white !important;
 }
-    
-    #pantalla-dividida{
-        display: flex;
-    margin-top: 15px;}
 
-    .custom{background-color: aqua;}
+/*/////////////////////////////////////////// PERSONALIZAR ///////////////////////////////////////////*/
+/*LATORRE FERNANDO*/
+/*//////////////////////////    Caja de mates*/
+#Caja_Mate {
+    width: 280px;
+    height: 80px;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: #c3c3c3c3;
+}
+
+#Caja_1 {
+    height: 68px;
+    margin: 5px;
+    background-color: #AAAAAA;
+    text-align: center;
+}
+
+#AlinearBTN1 {
+    display: flex;
+}
+
+#calabaza {
+    background-color: rgb(255, 0, 0);
+    margin-left: 35%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+#Imperial {
+    background-color: rgb(255, 255, 255);
+    margin-left: -20%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+/*//////////////////////////    Caja Colores*/
+#Caja_Color {
+    width: 280px;
+    height: 80px;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: #c3c3c3c3;
+}
+
+#Caja_2 {
+    height: 68px;
+    margin: 5px;
+    background-color: #AAAAAA;
+    text-align: center;
+}
+
+#AlinearBTN2 {
+    display: flex;
+}
+
+#Color_Marron {
+    background-color: rgb(83, 38, 0);
+    margin-left: 35%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+#Color_Negro {
+    background-color: rgb(0, 0, 0);
+    margin-left: -20%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+/*//////////////////////////    Caja Virolas*/
+#Caja_Virola {
+    width: 280px;
+    height: 80px;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: #c3c3c3c3;
+}
+
+#Caja_3 {
+    height: 68px;
+    margin: 5px;
+    background-color: #AAAAAA;
+    text-align: center;
+}
+
+#AlinearBTN3 {
+    display: flex;
+}
+
+#Color_Plateado {
+    background-color: rgb(136, 136, 136);
+    margin-left: 35%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+#Color_Dorado {
+    background-color: rgb(255, 238, 4);
+    margin-left: -20%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 30%;
+    cursor: pointer;
+}
