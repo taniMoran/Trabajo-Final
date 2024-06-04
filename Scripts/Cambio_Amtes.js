@@ -1,81 +1,83 @@
-let calabazaBTN = document.getElementById("calabaza");
-let ImperialBTN = document.getElementById("Imperial");
+$(document).ready(function() {
+    
+    let calabazaBtns = document.getElementsByClassName("boton-calabaza");
+    let imperialBtns = document.getElementsByClassName("boton-imperial");
 
-let ColorMarronBTN = document.getElementById("Color_Marron");
-let ColorNegroBTN = document.getElementById("Color_Negro");
+    // Seleccionar el primer botón de cada tipo
+    let primerCalabazaBtn = calabazaBtns[0];
+    let primerImperialBtn = imperialBtns[0];
 
-let PlateadoBTN = document.getElementById("Color_Plateado");
-let DoradoBTN = document.getElementById("Color_Dorado");
+    let imgchange = document.getElementById("img_mate_0");
 
-let imgchange = document.getElementById("img_mate_0");
+    var BLcalabaza = true;
+    var BLImperial = false;
 
-var BLcalabaza = true;
-var BLImperial = false;
-var BLColorMarron=false;
-var BLColorNegro=false;
-///////////////////////////////////// TIPO DE MATE /////////////////////////////////
-calabazaBTN.onclick = function(){
-    if(BLcalabaza = true){
-        imgchange.src="./imagenes/Mates/Mate_0.png";
-        BLImperial = false;
-    }
-}
-ImperialBTN.onclick=function() {
-    if(BLImperial=true){
-        imgchange.src="./imagenes/Mates/Mate_B0.png";
-        BLcalabaza = false;
-    }
-}
-/////////////////////////////////// COLOR DE MATE /////////////////////////////////
-ColorMarronBTN.onclick=function(){
-    BLColorMarron= true
-    BLColorNegro=false;
-
-    if(BLcalabaza == true){
-        imgchange.src="./imagenes/Mates/Mate_A.png";
-    }
-    if(BLImperial == true){
-        imgchange.src="./imagenes/Mates/Mate_B1.png"
-    }
-}
-ColorNegroBTN.onclick=function(){
-    BLColorNegro=true;
-    BLColorMarron= false;
-
-    if(BLcalabaza == true){
-        imgchange.src="./imagenes/Mates/Mate_C.png";
-    }
-    if(BLImperial == true){
-        imgchange.src="./imagenes/Mates/Mate_B2.png"
-    }
-}
-//////////////////////////////////// VIROLA DE MATE /////////////////////////////////
-PlateadoBTN.onclick=function(){
-    if(BLcalabaza == true & BLColorMarron == true){
-        imgchange.src="./imagenes/Mates/Mate_A.png";
-    }
-    else if(BLcalabaza == true & BLColorNegro == true){
-        imgchange.src="./imagenes/Mates/Mate_C.png";
+    ///////////////////////////////////// TIPO DE MATE /////////////////////////////////////
+    primerCalabazaBtn.onclick = function() {
+        if (BLcalabaza == true) {
+            imgchange.src = "./imagenes/Mates/Mate_0.png";
+            BLImperial = false;
+        }
     }
 
-    if(BLImperial == true & BLColorMarron == true){
-        imgchange.src="./imagenes/Mates/Mate_B1.png";
+    primerImperialBtn.onclick = function() {
+        if (BLImperial == true) {
+            imgchange.src = "./imagenes/Mates/Mate_B0.png";
+            BLcalabaza = false;
+        }
     }
-    else if(BLImperial == true & BLColorNegro == true){
-        imgchange.src="./imagenes/Mates/Mate_B2.png";
+
+    /////////////////////////////////// COLOR DE MATE /////////////////////////////////////
+    ColorMarronBTN.onclick = function(){
+        BLColorMarron = true;
+        BLColorNegro = false;
+
+        if(BLcalabaza == true){
+            imgchange.src = "./imagenes/Mates/Mate_A.png";
+        }
+        if(BLImperial == true){
+            imgchange.src = "./imagenes/Mates/Mate_B1.png";
+        }
     }
-}
-DoradoBTN.onclick=function(){
-    if(BLcalabaza == true & BLColorMarron == true){
-        imgchange.src="./imagenes/Mates/Mate_B.png";
+    ColorNegroBTN.onclick = function(){
+        BLColorNegro = true;
+        BLColorMarron = false;
+
+        if(BLcalabaza == true){
+            imgchange.src = "./imagenes/Mates/Mate_C.png";
+        }
+        if(BLImperial == true){
+            imgchange.src = "./imagenes/Mates/Mate_B2.png";
+        }
     }
-    else if(BLcalabaza == true & BLColorNegro == true){
-        imgchange.src="./imagenes/Mates/Mate_D.png";
+    //////////////////////////////////// VIROLA DE MATE /////////////////////////////////////
+    PlateadoBTN.onclick = function(){
+        if(BLcalabaza == true && BLColorMarron == true){
+            imgchange.src = "./imagenes/Mates/Mate_A.png";
+        }
+        else if(BLcalabaza == true && BLColorNegro == true){
+            imgchange.src = "./imagenes/Mates/Mate_C.png";
+        }
+
+        if(BLImperial == true && BLColorMarron == true){
+            imgchange.src = "./imagenes/Mates/Mate_B1.png";
+        }
+        else if(BLImperial == true && BLColorNegro == true){
+            imgchange.src = "./imagenes/Mates/Mate_B2.png";
+        }
     }
-    if(BLImperial == true & BLColorMarron == true){
-        imgchange.src="./imagenes/Mates/Mate_B3.png";
-    }
-    else if(BLImperial == true & BLColorNegro == true){
-        imgchange.src="./imagenes/Mates/Mate_B4.png";
-    }
-}
+    DoradoBTN.onclick = function(){
+        if(BLcalabaza == true && BLColorMarron == true){
+            imgchange.src = "./imagenes/Mates/Mate_B.png";
+        }
+        else if(BLcalabaza == true && BLColorNegro == true){
+            imgchange.src = "./imagenes/Mates/Mate_D.png";
+        }
+        if(BLImperial == true && BLColorMarron == true){
+            imgchange.src = "./imagenes/Mates/Mate_B3.png";
+        }
+        else if(BLImperial == true && BLColorNegro == true){
+            imgchange.src = "./imagenes/Mates/Mate_B4.png";
+        }
+    };
+});
