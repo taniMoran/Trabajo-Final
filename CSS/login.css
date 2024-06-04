@@ -90,20 +90,21 @@ width: auto;
 
 /* ESTILO LOGIN */
 body{
-margin: 20;
-padding: 20;
-font-family: 'Courier New', Courier, monospace;
-background: linear-gradient(0deg, #212529, white );
+    margin: 20;
+    padding: 20;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(0deg, #212529, white );
 
 }
 
 
 .formulario{
 background-color: white;
-position: absolute;
-top: 60%;
+position: relative;
+margin-top: 5%;
+margin-bottom: 5%;
 left: 50%;
-transform: translate(-50%, -50%);
+transform: translate(-50%);
 width: 400px;
 border: 2px solid black;
 border-radius: 60px;
