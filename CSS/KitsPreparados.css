@@ -33,13 +33,13 @@ hr{
    margin: 4% auto;
 }
 
-.products-list{
-width: 100%;
-display: flex;
-flex-wrap: wrap;
+    .products-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 
 
-}
+    }
 
 .products-list .product-item{
     width: 18%;    
@@ -82,10 +82,7 @@ height: 100%;
     transition: background-color 0.3s ease; /* Transición suave para hover */
   }
 
-  .category_list button:hover {
-  background-color: #293A63;
-   
-}
+  
 .category_list a{
     color: white;
     text-decoration: none;

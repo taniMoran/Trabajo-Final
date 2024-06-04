@@ -18,6 +18,7 @@
   
   <!-- Custom CSS -->
   <link rel="stylesheet" href="CSS/KitsPreparados.css">
+  <link rel="stylesheet" href="CSS/login.css">
  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -26,41 +27,22 @@
   
 </head>
 <body>
-  <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand mx-auto" href="#">
-        <img src="imagenes/Logo Corazon 2.png" alt="Logo" width="150" height="150" class="img-fluid">
-      </a>    
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <h4><a class="nav-link border rounded-pill bg-secondary text-white p-3" href="personalizar.html">Personalizados</a></h4>
-          </li>
-          <li class="nav-item ">
-            <h4><a class="nav-link border rounded-pill bg-danger text-white p-3" href="index.html">Inicio</a></h4>
-          </li>  
-          
-        </ul>
-        <!-- Redes Sociales -->
-        <div class="d-flex align-items-center ms-auto">
-          <a href="login.html" class="me-2">
-            <button type="button" class="btn btn-outline-primary text-white rounded-pill btn-custom">Ingresar/Registrarse</button>
-          </a>
-          <button type="button" class="btn btn-outline-primary me-2 bg-primary btn-custom">
-            <img src="imagenes/facebook.svg" alt="Facebook" width="30">
-          </button>
-          <button type="button" class="btn btn-outline-success bg-success btn-custom">
-            <img src="imagenes/whatsapp.svg" alt="WhatsApp" width="30">
-          </button>
-        </div>
-      </div>
+  <header class="header">
+    <div class="logo">
+        <img src="imagenes/Logo Corazon 2.png" alt="imagenlogo">
     </div>
-  </nav>
-
+    <nav >
+        <ul class="nav-links">
+            <li><a href="personalizar.html">Personalizar</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="login">
+    <a href="login.html" class="btn"><button>Login</button></a>
+    <img src="imagenes/candado.png" alt="candado">
+    </div>
+</header>
 
   <div class="wrap">
     <div class="store-wrap">
@@ -94,7 +76,7 @@
           <a href="#">Variedades</a>
         </div>
         <div class="product-item" category="MasVendidos">
-          <img src="imagenes/Copia de Imperial (400 x 500 px) (3).png" width="320px" height="320px" alt="">
+          <img src="imagenes/2.png" width="320px" height="320px" alt="">
           <a href="#">Kit Hide 1</a>
         </div>
         <div class="product-item" category="MasVendidos">
