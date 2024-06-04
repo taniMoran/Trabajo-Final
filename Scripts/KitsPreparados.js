@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    alert("holiss");
+
+    
     $('.categoryItem').click(function(){
         var catProduct = $(this).attr('category');
         // OCULTANDO PRODUCTOS
