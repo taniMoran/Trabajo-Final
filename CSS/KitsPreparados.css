@@ -16,14 +16,37 @@ font-family: "Open Sans", sans-serif;
 }
 
 .category_list{
+  
 color: black;
 font-weight: 500;
 position: relative;
 display: flex;
-margin: 30px 15%;
+margin: 30px 20%;
 
 justify-content: space-between
 } 
+
+.category_list button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+   
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #DC3545; /* Color de fondo */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para hover */
+  }
+  
+
+.category_list button:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 
 hr{
    
@@ -70,22 +93,6 @@ height: 100%;
     text-decoration: none;
     text-align: center;
     color: white;
-}
-.category_list button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-    background-color: #DC3545; /* Color de fondo */
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Transición suave para hover */
-  }
-
-  
-.category_list a{
-    color: white;
-    text-decoration: none;
 }
 
     
