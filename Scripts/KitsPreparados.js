@@ -1,20 +1,18 @@
-$(document).ready(function(){
-       
-    $('.categoryItem').click(function(){
+$(document).ready(function() {
+    function filterProducts(category) {
+        if (category === 'all') {
+            $('.product-item').show();
+        } else {
+            $('.product-item').hide();
+            $('.product-item[category="' + category + '"]').show();
+        }
+
+        $('.botonestoggler').addClass('hidden-menu');
+        $('#check').prop('checked', false);
+    }
+
+    $('.categoryItem, .itemstoggler').click(function() {
         var catProduct = $(this).attr('category');
-        // OCULTANDO PRODUCTOS
-        $('.product-item').hide();
-
-        // MOSTRANDO PRODUCTOS
-        $('.product-item[category="'+catProduct+'"]').show();   
-
-
+        filterProducts(catProduct);
     });
-
-    $('.categoryItem[category="all"]').click(function(){
-
-        $('.product-item').show();
-
-    })
-
 });

@@ -20,8 +20,7 @@
   <link rel="stylesheet" href="CSS/KitsPreparados.css">
   <link rel="stylesheet" href="CSS/login.css">
  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 
  
   
@@ -45,12 +44,22 @@
 </header>
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+<nav >
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <img src="imagenes/menu.png" alt="icono" height="40px">
+  </label>
+    <ul class="botonestoggler">
+      <li><button class="itemstoggler" category="all">Todos</button></li>
+      <li><button class="itemstoggler" category="MasVendidos">kit Variedades</button></li>
+      <li><button class="itemstoggler" category="kitMateros">Kit Materos</button></li>
+      <li><button class="itemstoggler" category="kitGastronomia">kit Gastronomia</button></li>
+      <li> <button class="itemstoggler" category="MasVendidos">Mas Vendidos</button></li>
+    </ul>
+
+</nav>
+
+
         <div class="category_list">
           <button class="categoryItem" category="all"> Todos</button>
           <button class="categoryItem" category="MasVendidos"> kit Variedades</button>
@@ -59,13 +68,10 @@
           <button class="categoryItem" category="MasVendidos">Mas Vendidos</button>
         </div>
       </div>
-  </div>
-</nav>
 
 
 
-
-
+                  <!-- CATALOGO DE PRODUCTOS -->
       <hr>
       <section class="products-list">
         <div class="product-item" category="kitMateros">
@@ -97,30 +103,9 @@
           <a href="#">kit Hide 2</a>
         </div>
       </section>
-    </div>
-  </div>
+  
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center mt-3">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-3">
-          <h5 class="font-weight-bold text-uppercase mb-3">Recurso 1</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-reset">Link 1</a></li>
-            <li><a href="#" class="text-reset">Link 2</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5 class="font-weight-bold text-uppercase mb-3">Recurso 2</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-reset">Link 1</a></li>
-            <li><a href="#" class="text-reset">Link 2</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+  
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
