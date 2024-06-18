@@ -77,7 +77,9 @@ justify-content: space-between
     
 
 
-    .header nav {margin-left: -50px;}
+    .header nav {margin-left: -50px;
+    margin-top: 70px;
+    }
 
     .category_list{
         
@@ -87,11 +89,16 @@ justify-content: space-between
     margin-left: 0%;
    margin-right: 0%;
     display: flex;
+ 
+    position: fixed;
+ top: 70px;
+ left: 13%;
   }
 
 
   .header .nav-links li{
-    padding: 0 3px;
+    padding: 0 px;
+    margin-left: 8px;
   }
 
   .header .nav-links li a {
@@ -99,10 +106,16 @@ justify-content: space-between
     margin-left: 0px;  }
 
     .header .login{
-     transform: scale(0.7);
+        position: static;
+      transform: scale(0.7);
+     display: flex;
+     
+  top: 40px;
+  left: 69%;
+     padding: 0 10px;
     }
 
-    .header .login img{margin-left: 15px;}
+    .header .login img{margin-left: 5px;}
 
     .header .logo img{
         transform: scale(0.7);
@@ -222,3 +235,6 @@ height: 100%;
     display: none;
 }
 
+.hidden-menu {
+    display: none;
+  }

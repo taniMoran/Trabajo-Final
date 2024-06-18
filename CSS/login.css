@@ -39,6 +39,7 @@
 .header .nav-links {
     list-style: none;
     margin-top: 5%;
+  
 }
 
 
@@ -171,12 +172,5 @@ input[type="submit"]:hover {
 
 .btn-custom {
     margin-bottom: 10px; /* Ajusta el margen inferior para los botones en vista móvil */
-}
-
-
-
-.carousel-inner img {
-    height: 400px; /* Ajusta el alto según tus necesidades */
-    object-fit: contain; /* Ajusta la imagen para que cubra el contenedor */
 }
 

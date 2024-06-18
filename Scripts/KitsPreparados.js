@@ -6,9 +6,9 @@ $(document).ready(function() {
             $('.product-item').hide();
             $('.product-item[category="' + category + '"]').show();
         }
-
+        // Ocultar el menú
         $('.botonestoggler').addClass('hidden-menu');
-        $('#check').prop('checked', false);
+        $('#check').prop('checked', false); // Desmarcar el checkbox para ocultar el menú
     }
 
     $('.categoryItem, .itemstoggler').click(function() {
