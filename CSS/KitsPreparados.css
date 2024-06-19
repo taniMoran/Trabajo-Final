@@ -107,7 +107,7 @@ justify-content: space-between
 
     .header .login{
         position: static;
-      transform: scale(0.7);
+      transform: scale(0.9);
      display: flex;
      
   top: 40px;
