@@ -243,7 +243,7 @@ grid-column: span 2;
     opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input{
+.formulario__grupo-incorrecto .formulario__input-error-activo{
     border: 3px solid #bb2929;
 
 }
