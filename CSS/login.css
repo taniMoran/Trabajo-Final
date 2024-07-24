@@ -26,6 +26,10 @@ body {
    padding: 2%;
 }
 
+.header .login{
+    display: flex;
+    justify-content: center;
+}
 
 
 .header .logo {
@@ -80,9 +84,13 @@ body {
     color: white;
 }
 
+
+
+
 .header .login img {
+   
     height: 40px;
-    width: auto;
+    width: 30px;
 }
 
 
