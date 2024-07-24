@@ -1,7 +1,13 @@
 
 /* ESTILO INDEX */
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+body {
+    display: block;
+    margin: 0px;
+}
+
 
 * {
     box-sizing: border-box;
@@ -17,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     height: 115px;
-   padding: 1%;
+   padding: 2%;
 }
 
 
@@ -83,6 +89,7 @@
 
 
 
+
 /* ESTILO LOGIN */
 
 main{
@@ -104,6 +111,7 @@ main{
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
+  
 }
 
 .formulario__grupo-input{
@@ -173,6 +181,8 @@ grid-column: span 2;
 
 
 /* BOOSTRAP DE LA PAGINA INDEX */
+
+
 .navbar-nav {
     /* display: flex; */
     justify-content: space-between; /* Distribuye los elementos horizontalmente */
@@ -211,6 +221,7 @@ grid-column: span 2;
     text-replace: .1s ease all;
 
 }
+
 
 .formulario__btn:hover{
     box-shadow: 3px 0px 30px rgba(163,163,163, 1);
