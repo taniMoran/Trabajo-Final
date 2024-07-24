@@ -26,10 +26,7 @@ body {
    padding: 2%;
 }
 
-.header .login{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 .header .logo {
