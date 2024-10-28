@@ -1,145 +1,381 @@
-:root{
-    --primary: #f84848;
-}
+    :root{
+        --primary: #5b4848;
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    *{
+            :root{
+        --primary: #5b4848;
+    }
 
-
-}
-
-body{
-    background-color: #efefef;
-
-}
+    *{
+       
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
 
 
+    }
 
-.container{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    overflow: hidden;
-}
-.matebackground{
-    position: relative;
-    width: 50%;
-    height: 475px;
-    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
-    0 -15px 35px rgba(0, 0, 0, 0.1),
-    0 -15px  35px rgba(0, 0, 0, 0.1);
-
-
-
-}
-.gradients{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+    body{
+        
+           
    
 
-}
+    .card{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 760px;   
+        
+        
+    }
 
-.gradient{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -2;
-}
+
+    .container{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        overflow: hidden;
+       
+    }
+    .matebackground{
+        padding-top: 30px;
+        position: relative;
+        width: 70%;
+        height: 600px;
+        box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+        0 -15px 35px rgba(0, 0, 0, 0.1),
+        0 -15px  35px rgba(0, 0, 0, 0.1);
 
 
-.gradient[color="marron"]{
-    background-image: linear-gradient(45deg, #924f15, #ac998e);
+
+    }
+
+
+
+
+
+
+
+
+    .gradients{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
     
-}
+
+    }
+
+    .gradient{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -2;
+    }
+
+
+    .gradient[color="marron"]{
+        background-image: linear-gradient(45deg, #924f15, white);
+        width: 100%;
+        z-index: -2;
+    }
+
+    .gradient[color="negro"]{
+        background-image: linear-gradient(45deg, #060606, white);
+        width: 100%;
+        z-index: 0;
+    }
+
+    .gradient[color="dorado"]{
+        background-image: linear-gradient(45deg, #ecf01d,white);
+        width: 100%;
+        z-index: -2;
+    }
+    .gradient[color="plateado"]{
+        background-image: linear-gradient(45deg, #f6f3f3,white);
+        width: 100%;
+        z-index: -2;
+    
+    }
 
 
 
-.gradient[color="dorado"]{
-    background-image: linear-gradient(45deg, #ecf01d, #d3d485);
-}
-.gradient[color="plateado"]{
-    background-image: linear-gradient(45deg, #f6f3f3, #9c9494);
+    .share{
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: var(--primary);
+        transition: .5s;
+
+    }
+    .card .matebackground .share i:hover{
+        transform: scale(1.3);
+    }
+
+    .share i{line-height: 50px;}
+
+
+
+    .mate1{
+        position: absolute;
+        width: 85%;       
+        bottom: 70px;
+       left: 70px;     
+        opacity: 1;
+    }
+    .bombi{
+        position: absolute;             
+        height: 430px;
+        bottom: 60px;
+       left: -170px;     
+        opacity: 1;
+        transform: rotate(-18deg);
+    }
+  
    
-}
-.logo{
-    position: absolute;
-    width: 100px;
-    left: 20px;
-    bottom: 20px;
-}
 
 
-.share{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background-color: white;
-    width: 50px;
-    height: 50px;
+
+    .Hide{
+        position: absolute;
+        top: 85px;
+        left: 15px;
+        font-size: 7rem;
+        text-transform: uppercase;
+        line-height: .9;
+        opacity: 0;
+    
+    
+
+    }
+
+
+
+
+
+    .logoMate{
+        position: absolute;
+        width: 330px;           
+        bottom: -200px;
+        left: -100px;
+    }
+
+
+    .info{
+        width: 50%;
+        background-color: white;
+        z-index: 1;
+        padding: 35px 40px;
+        box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),
+        0 -15px 35px rgba(0, 0, 0, 0.1),
+        0 15px 35px rgba(0, 0, 0, 0.1) ;
+    }
+
+    .mateName{
+        padding: 0 0 10px 0;
+    }
+
+    .mateName div{
+        display: flex;
+        align-items: center;
+    }
+
+    .mateName .div .big{
+        margin-right: 10px;
+        font-size: 2rem ;
+        color: #333;
+        line-height: 1;
+
+    }
+
+
+
+
+    .mateName div .matenegro{
+        background-color: var(--primary);
+        text-transform: uppercase;
+        color: #fff;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+
+    .mateName, .Descripcion, .color-container, .size-container{
+        border-bottom: 1px solid #dadada;
+    }
+
+    .Descripcion{
+        padding: 10px 0;
+    }
+
+    .title{
+        color: #333;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .text{
+        color: #555;
+        font-size: 17px;
+    }
+
+    .mate-container,.bombilla-container{
+        
+        text-align: center;
+        
+    }
+    .bombillas{justify-content: center;}
+
+    .tipos{
+        padding: 6px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .Tipo{
+        
+        Margin: 10px;
+        flex-basis: calc(33.33% - 20px); /* Tres elementos por fila */
+        text-align: center;        
+        border-radius: 6px;
+        background-color: #fdefef;    
+    
+    }
+
+
+    .Tipo:hover{
+        transform: scale(1.2);
+    }
+
+    .tipo.active{
+        transform: scale(1.2);
+    }
+
+
+
+    .bombillas{
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .bombilla{
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    text-align: center;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: var(--primary);
+    margin: 0 10px;
+    cursor: pointer;
     transition: .5s;
 
-}
-.share:hover{
-    transform: scale(1.1);
-}
-.share i{line-height: 50px;}
+    }
 
 
-.Hide{
-    position: absolute;
-    top: 85px;
-    left: 15px;
-    font-size: 7rem;
-    text-transform: uppercase;
-    line-height: .9;
-    opacity: .1;
    
-   
+    .bombilla[color="mixta"] {
+        background: linear-gradient(to right, #ffd700 50%, #c0c0c0 50%);
+        border-color: #c76324;
+    }
 
-}
-.matep{
-    opacity: 1;
-}
+    .bombilla[color="plateado"]{
+        background-color: #c0c0c0;
+        border-color: #c0c0c0;
+    }
 
-.mate{
-    position: absolute;
-    width: 100;
-    opacity: 0;
-    bottom: 0;
-    right: 0;
+    .bombilla[color="dorado"]{
+        background-color: #ffd700 ;
+        border-color: #e7d459;
+    }
+
+
+
+    .bombilla:hover{
+        transform: scale(1.2);
+        border-radius: 5px;
+        border-color: rgb(12, 11, 11);
+        border-style:double;
+    }
+
+    .bombilla.active{
+        
+        box-shadow: 0 0 10px .5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.3);
+        
     
 
-}
+    }
+
+    .precio-compra{
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .precio{
+        display: flex;
+        justify-content: flex-start;
+        color: #333;
+    }
+
+    .precio h1{
+    
+        font-size: 2.1rem;
+        font-weight: 600px;
+        line-height: 1;
+    }
+
+    .precio i{
+        font-size: 1.4rem;
+        margin-right: 3px;
+    }
+
+    .compra{
+        padding: .7rem 1rem;
+        background-color: var(--primary);
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600px;
+        font-size: 1.1rem;
+        transition: .5s;
+
+    }
+
+    .compra i{
+        margin-right: 7px;
+    }
+
+    .compra:hover{
+        transform: scale(1.1);
+    }
 
 
-.info{
-    width: 50%;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
 
 
+    }
 
-
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 860px;   
-}
-
-
-
+    
