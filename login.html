@@ -3,123 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
 
- 
-    <title>Login</title>
+    <!-- jQuery -->
+    <script src="Scripts/jquery-3.7.1.js"></script>   
 
-      <!-- jQuery -->
-      <script src="Scripts/jquery-3.7.1.js"></script>   
-     
-     <!-- CSS -->
-    <link rel="stylesheet" href="CSS/login.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="CSS/KitsPreparados.css">
-    
+
+    <style>
+        /* Estilo general del cuerpo */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background: linear-gradient(0deg, #212529, white);
+        }
+
+        /* Barra de navegación */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header .logo img {
+            height: 50px; /* Ajusta el tamaño del logo */
+        }
+
+        .header .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+
+        .header .login {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header .login button {
+            background-color: #E62C28;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .header .login img {
+            height: 40px; /* Ajusta el tamaño del ícono */
+        }
+
+        /* Estilo del formulario */
+        .formulario {
+            margin: 50px auto; /* Centra el formulario horizontalmente */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            width: 300px;
+            background-color: #f9f9f9;
+        }
+
+        .formulario h1 {
+            text-align: center;
+            padding: 10px;
+            border-bottom: 1px solid silver;
+            color: #333;
+        }
+
+        .formulario form {
+            padding-top: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .input-group input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .recordar {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .recordar a {
+            color: #E62C28;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            margin-top: 10px;
+            width: 100%;
+            height: 50px;
+            border: 1px solid;
+            background: #E62C28;
+            border-radius: 25px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Efecto del botón */
+        input[type="submit"]:hover {
+            border-color: black;
+            transition: .5s;
+        }
+
+        .registrarse {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .registrarse a {
+            color: #E62C28;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-  
-<!-- Barra de navegación -->
-<header class="header">
-    <div class="logo">
-        <img src="imagenes/Logo Corazon 2.png" alt="imagenlogo">
-    </div>
-    <nav >
-      <ul class="nav-links">
-        <li><a href="KitsPreparados.html">Kits</a></li>
-        <li><a href="index.html">Inicio</a></li>            
-        <li><a href="#">Nosotros</a></li>
-        </ul>
-    </nav>
-    <div class="login">
-    <a href="login.html" class="btn"><button>Login</button></a>
-    <img src="imagenes/logoMate.png" alt="candado">
-    </div>
-</header>
-
-    <main>
-        <form action="" class="formulario" id="formulario">
-            <!-- Grupo: Usuario -->
-           <div class="formulario__grupo" id="grupo__usuario">
-            <label for="usuario" class="formulario__label">Usuario</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="usuario123">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos yy solo puede contener numeros, letras y guion bajo. </p> 
-        </div> 
-
-          <!-- Grupo: Nombre -->
-          <div class="formulario__grupo" id="grupo__nombre">
-            <label for="nombre" class="formulario__label">Nombre</label>
-            <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 digitos yy solo puede contener numeros, letras y guion bajo. </p> 
-        </div> 
-
-        <!-- Grupo: Contraseña -->
-        <div class="formulario__grupo" id="grupo__password">
-            <label for="password" class="formulario__label">Contraseña</label>
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password" id="password">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos. </p> 
-        </div> 
-
-         <!-- Grupo: Contraseña 2 -->
-         <div class="formulario__grupo" id="grupo__password2">
-            <label for="password2" class="formulario__label">Repetir Contraseña</label>
-            <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password2" id="password2">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="formulario__input-error">Ambas contraseñas deben ser Identicas. </p> 
-        </div> 
-
-        <!-- Grupo: Correo Electronico -->
-        <div class="formulario__grupo" id="grupo__correo">
-            <label for="correo" class="formulario__label">Correo Electronico</label>
-            <div class="formulario__grupo-input">
-                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="johnJoe@gmail.com">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-            </div>
-            <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo. </p> 
+    <!-- Barra de navegación -->
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/Logo Corazon 2.png" alt="imagenlogo">
         </div>
-        
-         <!-- Grupo: Telefono -->
-         <div class="formulario__grupo" id="grupo__telefono">
-            <label for="telefono" class="formulario__label">Telefono</label>
-            <div class="formulario__grupo-input">
-                <input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="+593444403208">
-                <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="KitsPreparados.html">Kits</a></li>
+                <li><a href="index.html">Inicio</a></li>            
+                <li><a href="#">Nosotros</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="login.html" class="btn"><button>Login</button></a>
+            <img src="imagenes/logoMate.png" alt="candado">
+        </div>
+    </header>
+
+    <!-- Formulario de inicio de sesión -->
+    <div class="formulario">
+        <h1>Inicio de Sesión</h1>
+        <form method="post">
+            <div class="input-group">
+                <label for="Usuario">Nombre de Usuario</label>
+                <input type="text" id="Usuario" name="Usuario">
             </div>
-            <p class="formulario__input-error">Ingrese el prefijo antes del numero </p> 
-        </div>
 
-        <div class="formulario__grupo" id="grupo__terminos">
-            <label class="formulario__label">
-                <input class="" type="checkbox" name="terminos" id="terminos">
-                Acepto los Terminos y Condiciones
-            </label>
-        </div>
+            <div class="input-group">
+                <label for="contrase">Contraseña</label>
+                <input type="password" id="contrase" name="contrase">
+            </div>
 
-        <div class="formulario__mensaje" id="formulario__mensaje">
-            <p><i class="fa-solid fa-triangle-exclamation"></i><b> Error: </b> Por favor rellena el formulario correctamente</p>
-        </div>
+            <div class="recordar"><a href="#">¿Ha olvidado su contraseña?</a></div>
+            <input type="submit" value="Iniciar">
 
-        <div class="formulario__grupo formulario__grupo-btn-enviar">
-            <button type="submit" class="formulario__btn">Enviar</button>
-        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
-        </div>
+            <div class="registrarse">
+                Quiero <a href="signup.html">Registrarme</a>
+            </div>
         </form>
-    </main>
+    </div>
 
-
-    
-    
- <!-- JAVA SCRIPT -->
- <script src="Scripts/formulario.js"></script>
-<script src="https://kit.fontawesome.com/243a81b416.js" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="Scripts/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/243a81b416.js" crossorigin="anonymous"></script>
 </body>
 </html>
